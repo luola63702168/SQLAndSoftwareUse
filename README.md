@@ -1,2 +1,1 @@
-# SQLAndSoftwareUse
-Here are software and database usage notes
+- Here are software and database usage notes

@@ -417,7 +417,7 @@ insert into students values
 (0,'周杰',34,176.00,2,5,0);
 
 -- 向classes表中插入数据
-insert into classes values (0, "python_01期"), (0, "python_02期");
+insert into classes values (0, "python_01"), (0, "python_02");
 
 
 

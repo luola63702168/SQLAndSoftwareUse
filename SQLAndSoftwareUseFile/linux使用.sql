@@ -143,7 +143,12 @@
 	10.sudo chgrp -R python python学习/ 改变文件所属组（-R是子目录同等操作）
 
 	11.chmod -R 754 文件/目录（-R同上）修改文件/目录权限
-
+		分别表示User、Group、及Other的权限。
+		r=4，w=2，x=1
+		若要rwx属性则4+2+1=7；
+		若要rw-属性则4+2=6；
+		若要r-x属性则4+1=5。
+		
 	12.sudo chown caiyun python学习/改变文件所属用户
 
 关于ssh：ssh username@IP  

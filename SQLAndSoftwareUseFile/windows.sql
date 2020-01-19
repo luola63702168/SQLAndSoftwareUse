@@ -8,10 +8,13 @@ shell（常见命令不做记录， 参考linux.sql）
 	-- 在powshell下使用linux cp 即可
 
 
-win r
-
--- 打开防火墙设置
+-- win r
+-- 1、打开防火墙设置
 	wf.msc
+
+-- 打开我的电脑
+win e
+
 
 
 

@@ -6,7 +6,9 @@
 	ctrl r 
 
 -- 全局搜索
-	ctrl+shift+G 
+	ctrl+shift+N ：搜索文件
+	ctrl+shift+F ：搜索文件内容（很好用，如果要限定文件夹按钮的话，可以使用最下面一个按钮）
+
 
 -- 坐标跳转
 	ctrl+g

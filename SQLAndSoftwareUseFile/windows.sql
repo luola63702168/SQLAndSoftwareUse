@@ -18,6 +18,8 @@ win r
 Ctrl+Alt+Del - 打开任务管理器 
 
 ctrl+win+方向键 切屏
+-- 查看端口占用
+netstat -aon|findstr "80"  
 
 
 	

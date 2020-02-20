@@ -55,14 +55,42 @@ linux
 				- 配置好 nginx.conf (参考：nginx.conf2 (请查询：here))
 
 	-- 负载均衡
+		-- 策略：
+			- 轮询（默认）：一个个来
+				    upstream myserver{
+				        server 192.168.233.12:8080 ;
+				        server 192.168.233.12:8081 ;
+				    }
+			- 权重：大的多一点
+				    upstream myserver{
+				        server 192.168.233.12:8080 weight=5;
+				        server 192.168.233.12:8081 weight=10;
+				    }
+
+
+			- ip_hash（安装ip地址的hash值进行分配）：第一次访问是哪个服务器，第二次还是。（解决session共享问题）
+				    upstream myserver{
+				    	ip_hash;
+				        server 192.168.233.12:8080 ;
+				        server 192.168.233.12:8081 ;
+				    }
+
+		    - fire：按照后端的响应时间来分配请求，响应时间短的优先分配。
+				    upstream myserver{
+				        server 192.168.233.12:8080 ;
+				        server 192.168.233.12:8081 ;
+				        fire;
+				    }
+
 		-- 案例
 			- 效果:
-				- win下浏览器输入192.168.233.12:9001/edn/a.html,把这个请求平均分担给 127.0.0.1:8080 和 127.0.0.1:8081两个服务器中
+				- win下浏览器输入192.168.233.12:80/edn/a.html,把这个请求平均分担给 192.168.233.12:8080 和 192.168.233.12:8081两个服务器中
 			- 过程：
 				- 准备两台tomcat服务器
 				- 端口开放
 				- 在两个tomcat安装目录下的webapps中创建文件夹：edn和其文件夹内部的 a.html 文件（内容别写一样）。
 				- 启动服务器
+				- 配置好 nginx.conf (参考：nginx.conf3 (请查询：here))
 
 
 win

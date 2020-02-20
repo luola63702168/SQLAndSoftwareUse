@@ -121,6 +121,9 @@
 	--添加对外开放端口
 		- firewall-cmd --add-port=8080/tcp --permanent
 		- firewall-cmd -reload
+46.systemctl 命令 ： 用于处理系统服务 ：https://jingyan.baidu.com/article/ed2a5d1fa4c76409f6be1733.html
+
+47.ulimited命令，用于资源配置等。https://www.cnblogs.com/zengkefu/p/5649407.html
 
 37.关于用户、组和权限等
 	0.id 账户名 可以知道账户具有的权限 uid用户代号和gid组代号

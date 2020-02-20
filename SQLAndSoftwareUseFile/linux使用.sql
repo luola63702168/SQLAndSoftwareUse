@@ -117,6 +117,10 @@
 
 44.ctrl+shift+t , 在同一个窗口中打开了另一个终端；Alt+n,对应的就会切换到第n个终端。
 
+45.firewall-cmd --list-all 查看防火墙相关信息（这些信息可以修改）。
+	--添加对外开放端口
+		- firewall-cmd --add-port=8080/tcp --permanent
+		- firewall-cmd -reload
 
 37.关于用户、组和权限等
 	0.id 账户名 可以知道账户具有的权限 uid用户代号和gid组代号

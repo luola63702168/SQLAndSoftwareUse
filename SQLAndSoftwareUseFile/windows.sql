@@ -25,4 +25,4 @@ Ctrl+Alt+Del - 打开任务管理器
 ctrl+win+方向键 切屏
 
 
-	
+ctrl + shift + f  切换输入法简繁

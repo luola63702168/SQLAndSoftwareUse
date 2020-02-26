@@ -18,11 +18,12 @@ win r
 
 _____________________________________________
 
-打开我的电脑 win e
+win e  打开我的电脑 
 
-Ctrl+Alt+Del - 打开任务管理器 
+Ctrl+Alt+Del  打开任务管理器 
 
-ctrl+win+方向键 切屏
-
+ctrl+win+方向键   切屏
 
 ctrl + shift + f  切换输入法简繁
+
+ctrl + shift 然后再按shift键，可以切换自己想要的输入法。

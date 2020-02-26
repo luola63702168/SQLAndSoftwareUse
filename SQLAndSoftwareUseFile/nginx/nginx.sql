@@ -126,6 +126,23 @@ linux
 			- autoindex on; 代表当请求这个资源的时候，会把该目录内容列举出来。
 			- root和alias:https://jingyan.baidu.com/article/3aed632edfd12e701180916b.html
 
+		2、常用的路由匹配规则【= | ^~ | ~ | ~* | / | /uri 】：
+			 - location = /uri                 = 表示精确匹配，只有完全匹配上才能生效，若找到，停止搜索； 
+			 - location ^~ /uri               ^~开头表示对URL路径进行前缀匹配，并且在正则匹配之前，若找到，停止搜索； 
+			 - location ~ pattern           ~开头表示区分大小写的正则匹配，按配置文件顺序匹配； 
+			 - location ~* pattern          ~*开头表示不区分大小写的正则匹配，按配置文件顺序匹配； 
+			 - location /uri                    不带任何修饰符，表示前缀匹配，在正则匹配之后； 
+			 - location /                        通用匹配，任何未匹配到其他location的请求都会匹配到，相当于default； 
+
+
+
+		3、多个location配置的情况匹配优先级
+			- 首先精确匹配 = ；
+			- 其次前缀匹配 ^~；
+			- 其次是按照配置文件中的正则匹配； 
+			- 然后匹配不带任何修饰符的前缀匹配； 
+			- 最后交给/通用匹配；
+
 -- nginx高可用集群
 	- 需求：配置一个主nginx服务器和一个从nginx服务器，当主nginx宕机的时候，自动使用从nginx服务器提供服务的过程。
 	- 过程：

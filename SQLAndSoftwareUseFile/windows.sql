@@ -27,3 +27,5 @@ ctrl+win+方向键   切屏
 ctrl + shift + f  切换输入法简繁
 
 ctrl + shift 然后再按shift键，可以切换自己想要的输入法。
+
+win l  锁屏

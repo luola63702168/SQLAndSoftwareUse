@@ -10,3 +10,7 @@
 主题使用：
 - 比较喜欢的几个配色方案:github-dark  salmononlce  juicy  humble  berrynice
 - 现用主题oyu 配色humble
+
+兼容问题：
+- 如果想让pycharm和sublime的tab兼容，需要勾选pycharm的use tab character这一项。
+	- 具体位置是：setting>editor>codestyle>python

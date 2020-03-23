@@ -26,3 +26,4 @@ pacman -Sg abc #查询abc这个包组包含的软件包
 清除无用的包
 pacman -R $(pacman -Qdtq)
 
+
